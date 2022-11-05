@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Pasteleria</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/pedido.css">
+    </head>
+    <body>
+        <h1>Ingresa los datos de tu pedido</h1>
+        <form action="#">
+            <div class="row">
+                <div class="column">
+                    <h3>Datos del pastel</h3>
+                    <label for="cake-select">Base:</label><br>
+                    <select id="cake-select" name="base" onchange="updatePrice()"></select><br><br>
+
+                    <label for="topping-select">toppings:</label><br>
+                    <select id="topping-select" name="topping" onchange="updatePrice()"></select><br><br>
+
+                    <input type="checkbox" title="baseCheck" id="cbox1" onclick="extraBase()" value="base2"> 
+                    <label for="cake-select2">Base extra:</label><br>
+                    <select name="base2" id="cake2-select" style="display:none" onchange="updatePrice()"></select><br>
+
+
+                    <input type="checkbox" title="topCheck"  id="cbox2" onclick="extraTopping()" value="topping2">
+                    <label for="topping2">Topping extra:</label><br>
+                    <select name="topping2" id="topping2-select" style="display:none" onchange="updatePrice()"></select><br>
+
+                    <label for="cake-description">Descripcion del pastel:</label><br>
+                    <textarea id="cake-description" name="cake-description" rows="4"></textarea><br>
+                    <p id="price">Precio estimado: </p>
+                </div>
+
+                <div class="column">
+                    <h3>Datos del cliente</h3>
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="phone">Telefono:</label><br>
+                    <input type="text" id="phone" name="phone"><br><br>
+
+                    <label for="email">Correo:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="address">Direccion:</label><br>
+                    <textarea id="address" name="w3review" rows="4"></textarea><br><br>
+
+                    <input type="submit" value="Save">
+                </div>
+            </div>
+        </form>
+
+
+    </body>
+    <script type="text/javascript" src="../../js/Pasteles.js"></script>
+    <script type="text/javascript" src="../../js/Pedido.js"></script>
+</html>

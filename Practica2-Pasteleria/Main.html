@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Pasteleria</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+            <img class="logo" src="img/DALL-E logo.png" alt="logo">
+            <h1>Hut Sto'ep Bakery</h1>
+            <p>Spacial bakes by order</p>
+
+    </header>
+
+    <section>
+
+        <ul>
+            <li><a class="links active" href="pages/Cliente/dashboard.html" onclick="return changeSrc(this)">Inicio</a></li>
+            <li><a class="links" href="pages/Cliente/pedido.html" onclick="return changeSrc(this)">Pedir un pastel</a></li>
+            <li><a class="links" href="pages/Pastelero/ingredientes.html" onclick="return changeSrc(this)">Lista de ingredientes</a></li>
+            <li><a class="links" href="pages/Pastelero/pedidosAdmin.html" onclick="return changeSrc(this)">Pedidos a realizar</a></li>
+        </ul>
+
+        <article>
+           <iframe class="injectContent" title="iframe" src="pages/Cliente/dashboard.html" frameborder="0"></iframe>
+        </article>
+    </section>
+
+    <footer>
+        <p>Hut Sto'ep Bakery <br> 
+            66Col, Blvr. Mariano Escobedo Pte., Jardines de Jerez, 37530 León, Gto.<br>
+            +526121081234<br>
+            Lunes a Sabados de 9:00 a.m. a 18:00 p.m.</p>
+    </footer>
+    <script type="text/javascript" src="js/Main.js"></script>
+</html>
